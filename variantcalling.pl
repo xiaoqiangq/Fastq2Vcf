@@ -1581,7 +1581,7 @@ while (<FUNCTION>) {
 		
 	#$annovar_commandline[2] = qq/perl $hash_config{"summarize_annovar"} $annovar_origin_dir\/$annovar.avi $hash_config{"annovar_db"} -buildver hg19 --verdbsnp 138 --ver1000g 1000g2014oct -veresp 6500siv2 -clinvar clinvar_20140929 -ljb ljb26 -cosmic cosmic70 -outfile $annovar_origin_dir\/$annovar.vcf 2>>$log_dir\/annovar.log && echo annovar.finished >>$stats_log /;
 
-	$annovar_commandline3[0] = qq/$hash_config{"annovar2vcf"} -v $input_vcf -a $outfile.genome_summary.csv -o $annovar_dir\/annovar.$jobname_pre.vcf.gz 2>>$log_dir\/annovar.log && $hash_config{'tabix'} -p vcf $annovar_dir\/annovar.$jobname_pre.vcf.gz /; #-r repeat.txt 
+	$annovar_commandline3[0] = qq/$lib\/annovar.8.summary-snp-indel.pl -v $input_vcf -a $outfile.genome_summary.csv -o $annovar_dir\/annovar.$jobname_pre.vcf.gz 2>>$log_dir\/annovar.log && $hash_config{'tabix'} -p vcf $annovar_dir\/annovar.$jobname_pre.vcf.gz /; #-r repeat.txt 
 
 	&multifork($job_run,$whichSubroutine,"annovar3-$jobname_pre",@annovar_commandline3);
 
