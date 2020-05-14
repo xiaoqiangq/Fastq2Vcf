@@ -1,0 +1,5 @@
+3117-BL-10	./test_seq/3117-BL-10_1.fq.gz	./test_seq/3117-BL-10_2.fq.gz
+3117-BL-11	./test_seq/3117-BL-11_1.fq.gz	./test_seq/3117-BL-11_2.fq.gz
+3117-BL-1	./test_seq/3117-BL-1_1.fq.gz	./test_seq/3117-BL-1_2.fq.gz
+3117-BL-12	./test_seq/3117-BL-12_1.fq.gz	./test_seq/3117-BL-12_2.fq.gz
+3117-BL-13	./test_seq/3117-BL-13_1.fq.gz	./test_seq/3117-BL-13_2.fq.gz
