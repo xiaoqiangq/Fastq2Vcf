@@ -48,7 +48,7 @@ convert2annovar	/scratch/cgg/software/annovar/2019Oct24/convert2annovar.pl
 annotate_variation	/scratch/cgg/software/annovar/2019Oct24/annotate_variation.pl
 annovar_db	/scratch/cgg/software/annovar/2019Oct24/humandb
 
-annovar2vcf	/scratch/cgg/software/annovar/2019Oct24/annovar.8.summary-snp-indel.pl
+#annovar2vcf	/scratch/cgg/software/annovar/2019Oct24/annovar.8.summary-snp-indel.pl
 
 ####
 #

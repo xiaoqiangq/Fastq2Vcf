@@ -1,0 +1,63 @@
+############
+## 1KG Database location
+############
+
+opt_ref_genome	/data1/software/database/hg38/hg38.fa
+
+Mills_and_1000G_gold_standard_indels	/data1/software/database/Broad/hg38/Mills_and_1000G_gold_standard.indels.hg38.vcf.gz
+dbsnp	/data1/software/database/Broad/hg38/dbsnp_146.hg38.vcf.gz
+##
+hapmap	/data1/software/database/Broad/hg38/hapmap_3.3.hg38.vcf.gz
+kg_omni /data1/software/database/Broad/hg38/1000G_omni2.5.hg38.vcf.gz
+KG_phase1_snps	/data1/software/database/Broad/hg38/1000G_phase1.snps.high_confidence.hg38.vcf.gz
+
+##qplot
+qplot_tbl	/data1/software/database/hg38/dbsnp146.tbl
+qplot_winsize100	/data1/software/database/hg38/hg38.winsize100.gc
+AgilentSureSelect50mb	/data1/software/database/hg38/refGene.exon.bed
+cpgIslandExt	/scratch/cgg/software/database/hg38/cpgIslandExt.hg38.bed
+
+##beagle4
+beagle4_1kg	/scratch/cgg/software/database/beagle4-1kg/bochet.gcc.biostat.washington.edu/beagle/1000_Genomes_phase1_vcf/allchroms.1kg.ref.phase1_release_v3.20101123.vcf.gz
+
+############
+##Software location
+############
+
+#java	/usr/local/java/1.8.0/bin/java
+#java	java
+cutadapt	/accre/arch/easybuild/software/Compiler/GCC/5.4.0-2.26/cutadapt/1.9.1-Python-2.7.12/bin/cutadapt
+samtools	/data1/software/samtools/samtools-1.10/samtools
+bwa	/data1/software/bwa/bwa-0.7.17/bwa
+tabix	/data1/software/samtools/samtools-1.10/bin/tabix
+bgzip	/data1/software/samtools/samtools-1.10/bin/bgzip
+
+##
+gatk	/data1/software/GATK/gatk-4.1.4.1/gatk
+qplot	/scratch/cgg/software/qplot/qplot-20130627/bin/qplot
+
+############
+##scripts
+############
+ssub_array	/home/weiq1/script/bingshan/ssub_array2
+
+#####################
+##annovar
+#########################
+convert2annovar	/data1/software/annovar/2019Oct24/convert2annovar.pl
+annotate_variation	/data1/software/annovar/2019Oct24/annotate_variation.pl
+annovar_db	/data1/software/annovar/2019Oct24/humandb
+
+#annovar2vcf	/scratch/cgg/software/annovar/2018Apr16/annovar.8.summary-snp-indel.pl
+
+####
+#
+###
+sendemail	/usr/sbin/sendmail
+
+####
+#basic filter
+###
+vcf2candidate	/home/weiq1/software/bin/vcf2candidate.pl
+
+
