@@ -93,7 +93,7 @@ GetOptions("help|h"  => \$opt_help,
 	"buildver|buildver=s" => \$buildver,
 ##
 	"sleep|sleep=f" => \$sleep,
-	"jobname_pre|jobname_pre=f" => \$jobname_pre,
+	"jobname_pre|jobname_pre=s" => \$jobname_pre,
 	"steptime|steptime=s" => \$steptime,
 	);
 
